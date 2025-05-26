@@ -57,12 +57,14 @@ const sendEmail = (e: React.FormEvent) => {
   }
 
   return (
+    
     <div className="min-h-screen bg-gradient-to-br from-ice-blue to-powder-blue">
+      
       {/* Header */}
+
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrollY > 50 ? "bg-deep-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-        }`}
+          scrollY > 50 ? "bg-deep-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}
       >
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -115,9 +117,21 @@ const sendEmail = (e: React.FormEvent) => {
       </header>
 
       {/* Hero Section */}
+      
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+          {/* Video Background */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover z-0"
+  >
+    <source src="/solar.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
         <div
-          className="absolute inset-0 bg-gradient-to-r from-deep-navy/80 to-sapphire/60"
+          
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
           }}
@@ -194,7 +208,7 @@ const sendEmail = (e: React.FormEvent) => {
                 title: "Generator",
                 description:
                   "Frequent power outages?... We offer generator solutions so you can have an uninterrupted power supply.",
-                features: ["SReliable Backup", "Low-noise, fuel-efficient performance", "Wide range of capacities (1 kVA - 100+ kVA", "Automatic and manual startup options"],
+                features: ["SReliable Backup", "Low-noise, fuel-efficient performance", "Wide range of capacities (1kVA - 100+kVA)", "Automatic and manual startup options"],
               },
             ].map((service, index) => (
               <Card
