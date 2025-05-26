@@ -351,7 +351,7 @@ const sendEmail = (e: React.FormEvent) => {
             </div>
           </div>
           <div className="border-t border-sapphire mt-8 pt-8 text-center text-ice-blue">
-            <p>&copy; 2024 Hardwired Solutions. All rights reserved.</p>
+            <p>&copy; 2025 Hardwired Solutions. All rights reserved.</p>
           </div>
         </div>
       </footer>
