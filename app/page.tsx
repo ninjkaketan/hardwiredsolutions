@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Menu, X, Home, Wifi, Shield, Phone, Mail, MapPin, ChevronRight, Star, Users, Award, Clock } from "lucide-react"
+import { Menu, X, Home, Wifi, Shield, Phone, Mail, MapPin, ChevronRight, SquareMenu ,  Star, Users, Award, Clock, Sun } from "lucide-react"
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
@@ -182,6 +182,20 @@ const sendEmail = (e: React.FormEvent) => {
                   "Advanced surveillance systems with AI-powered monitoring and real-time alerts for maximum protection.",
                 features: ["4K Surveillance", "AI Monitoring", "Remote Access", "Cloud Storage"],
               },
+              {
+                icon: <Sun size={48} />,
+                title: "Solar",
+                description:
+                  "Substancially save on your energy bills by generating your own electricity..",
+                features: ["Shrink your Energy Bills", "Boost your home's value", "Champion the Environment", "Unlock Government Support"],
+              },
+              {
+                icon: <SquareMenu size={48} />,
+                title: "Generator",
+                description:
+                  "Frequent power outages?... We offer generator solutions so you can have an uninterrupted power supply.",
+                features: ["SReliable Backup", "Low-noise, fuel-efficient performance", "Wide range of capacities (1 kVA - 100+ kVA", "Automatic and manual startup options"],
+              },
             ].map((service, index) => (
               <Card
                 key={index}
@@ -213,8 +227,8 @@ const sendEmail = (e: React.FormEvent) => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
-              { icon: <Users size={32} />, number: "500+", label: "Happy Clients" },
-              { icon: <Award size={32} />, number: "1000+", label: "Projects Completed" },
+              { icon: <Users size={32} />, number: "200+", label: "Happy Clients" },
+              { icon: <Award size={32} />, number: "300+", label: "Projects Completed" },
               { icon: <Star size={32} />, number: "5.0", label: "Average Rating" },
               { icon: <Clock size={32} />, number: "24/7", label: "Support Available" },
             ].map((stat, index) => (
@@ -235,7 +249,7 @@ const sendEmail = (e: React.FormEvent) => {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-deep-navy mb-6">Why Choose Hardwired Solutions?</h2>
               <p className="text-lg text-gray-600 mb-6">
-                With over a decade of experience in smart technology integration, we deliver cutting-edge solutions that
+                With over 5+ years experience in smart technology integration, we deliver cutting-edge solutions that
                 enhance your lifestyle and security.
               </p>
               <div className="space-y-4">
@@ -264,6 +278,7 @@ const sendEmail = (e: React.FormEvent) => {
           </div>
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
@@ -351,7 +366,7 @@ const sendEmail = (e: React.FormEvent) => {
             </div>
           </div>
           <div className="border-t border-sapphire mt-8 pt-8 text-center text-ice-blue">
-            <p>&copy; 2025 Hardwired Solutions. All rights reserved.</p>
+            <p> K10 </p>
           </div>
         </div>
       </footer>
