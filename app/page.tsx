@@ -278,9 +278,9 @@ const sendEmail = (e: React.FormEvent) => {
               <h3 className="text-2xl font-bold text-deep-navy mb-6">Contact Information</h3>
               <div className="space-y-6">
                 {[
-                  { icon: <Phone size={24} />, label: "Phone", value: "+91 0000000000" },
-                  { icon: <Mail size={24} />, label: "Email", value: "info@hardwiredsolutions.com" },
-                  { icon: <MapPin size={24} />, label: "Address", value: "Goa" },
+                  { icon: <Phone size={24} />, label: "Phone", value: "+91 7620856522" },
+                  { icon: <Mail size={24} />, label: "Email", value: "Hardwiredsolutions99@gmail.com" },
+                  { icon: <MapPin size={24} />, label: "Address", value: "H.No.413, Salem, Salvador Do Mundo, North Goa 403101" },
                 ].map((contact, index) => (
                   <div key={index} className="flex items-center">
                     <div className="text-sapphire mr-4">{contact.icon}</div>
