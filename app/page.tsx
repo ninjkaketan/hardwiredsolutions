@@ -59,7 +59,7 @@ const sendEmail = (e: React.FormEvent) => {
 
   return (
     
-    <div className="min-h-screen bg-gradient-to-br from-ice-blue to-deep-navy">
+    <div className="min-h-screen bg-deep-navy">
       
       {/* Header */}
 
@@ -126,6 +126,7 @@ const sendEmail = (e: React.FormEvent) => {
     loop
     muted
     playsInline
+     poster="/fallbackimage.jpg"
     className="absolute top-0 left-0 w-full h-full object-cover z-0"
   >
     <source src="/solar.mp4" type="video/mp4" />
@@ -384,7 +385,6 @@ const sendEmail = (e: React.FormEvent) => {
         </div>
       </section>
 
-
 {/* CEO & Founder Section */}
 <section className="py-24 bg-white border-t border-gray-200" id="ceo">
   <div className="container mx-auto px-4">
@@ -419,6 +419,8 @@ const sendEmail = (e: React.FormEvent) => {
     </div>
   </div>
 </section>
+
+
 
       {/* Footer */}
       <footer className="bg-deep-navy text-white py-12">
