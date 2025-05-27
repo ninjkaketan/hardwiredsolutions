@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Menu, X, Home, Wifi, Shield, Phone, Mail, MapPin, ChevronRight, SquareMenu ,  Star, Users, Award, Clock, Sun } from "lucide-react"
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { Typewriter } from 'react-simple-typewriter'
 
 
 
@@ -137,10 +138,20 @@ const sendEmail = (e: React.FormEvent) => {
           }}
         />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            Smart Solutions for
-            <span className="block text-powder-blue">Modern Living</span>
-          </h1>
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+  <span className="mr-2">Smart Solutions for</span>
+  <span className="block text-powder-blue">
+    <Typewriter
+      words={['Modern Living', 'Connected Homes', 'Secure Spaces']}
+      loop={true}
+      cursor
+      cursorStyle="|"
+      typeSpeed={80}
+      deleteSpeed={60}
+      delaySpeed={1500}
+    />
+  </span>
+</h1>
           <p className="text-xl md:text-2xl text-ice-blue mb-8 max-w-3xl mx-auto">
             Transform your home with cutting-edge automation, reliable WiFi networks, and advanced security systems
           </p>
@@ -159,7 +170,16 @@ const sendEmail = (e: React.FormEvent) => {
             >
               Contact Us
             </Button>
-          </div>
+            <div className=" flex justify-center">
+          <a
+            href="/brochure.pdf"
+            download
+            className="inline-block bg-deep-navy text-white hover:bg-powder-blue hover:text-deep-navy/90 px-9 py-2 text-lg rounded-md transition-all duration-300"
+          >
+            Download Brochure
+          </a>
+        </div>
+        </div>
         </div>
       </section>
 
@@ -293,6 +313,24 @@ const sendEmail = (e: React.FormEvent) => {
         </div>
       </section>
 
+      {/* testemonials*/}
+<section className="py-20 bg-gray-50" id="testimonials">
+  <div className="container mx-auto px-4 text-center">
+  <h2 className="text-4xl md:text-5xl font-bold text-deep-navy mb-6">Testimonials</h2>
+    <div className="grid md:grid-cols-2 gap-8">
+      <blockquote className="bg-white p-8 rounded-lg shadow text-gray-700">
+        “"Hardwired Solutions transformed our entire home setup. From smart lighting to a rock-solid WiFi network, every detail was handled with precision and care. The team was incredibly knowledgeable and responsive — I can now control my entire house with a single tap!"”
+        <div className="mt-4 text-sm text-gray-500">— Ritika Sharma, Home Automation Client</div>
+      </blockquote>
+      <blockquote className="bg-white p-8 rounded-lg shadow text-gray-700">
+        “"As a small business owner, I needed a secure and efficient IT setup. Hardwired Solutions not only delivered a flawless network but also ensured my office is protected with top-tier surveillance. Their commitment to innovation and service is unmatched."”
+        <div className="mt-4 text-sm text-gray-500">— Keegan Fernandes, Business Owner</div>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
@@ -322,6 +360,9 @@ const sendEmail = (e: React.FormEvent) => {
               </div>
             </div>
 
+
+            
+
             <Card className="border-0 shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-deep-navy mb-6">Send us a Message</h3>
@@ -344,8 +385,7 @@ const sendEmail = (e: React.FormEvent) => {
       </section>
 
 
-
- {/* CEO & Founder Section */}
+{/* CEO & Founder Section */}
 <section className="py-24 bg-white border-t border-gray-200" id="ceo">
   <div className="container mx-auto px-4">
     <div className="text-center mb-16">
@@ -355,13 +395,13 @@ const sendEmail = (e: React.FormEvent) => {
       </p>
     </div>
 
-    <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-0 items-center max-w-5xl mx-auto">
       {/* Founder Image */}
       <div className="w-full">
         <img
           src="/alltree.jpg"
           alt="Alltrey Pinto - Founder & CEO"
-          className="w-84 h-auto rounded-xl shadow-lg object-cover"
+          className="w-80 h-100 rounded-xl shadow-lg object-cover"
         />
       </div>
 
