@@ -420,7 +420,6 @@ const sendEmail = (e: React.FormEvent) => {
   </div>
 </section>
 
-
       {/* Footer */}
       <footer className="bg-deep-navy text-white py-12">
         <div className="container mx-auto px-4">
