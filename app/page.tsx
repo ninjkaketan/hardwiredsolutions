@@ -58,7 +58,7 @@ const sendEmail = (e: React.FormEvent) => {
 
   return (
     
-    <div className="min-h-screen bg-gradient-to-br from-ice-blue to-powder-blue">
+    <div className="min-h-screen bg-gradient-to-br from-ice-blue to-deep-navy">
       
       {/* Header */}
 
@@ -208,7 +208,7 @@ const sendEmail = (e: React.FormEvent) => {
                 title: "Generator",
                 description:
                   "Frequent power outages?... We offer generator solutions so you can have an uninterrupted power supply.",
-                features: ["SReliable Backup", "Low-noise, fuel-efficient performance", "Wide range of capacities (1kVA - 100+kVA)", "Automatic and manual startup options"],
+                features: ["Reliable Backup", "Low-noise, fuel-efficient performance", "Wide range of capacities (1kVA - 100+kVA)", "Automatic and manual startup options"],
               },
             ].map((service, index) => (
               <Card
