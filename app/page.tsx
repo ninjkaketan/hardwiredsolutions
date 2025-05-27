@@ -172,7 +172,7 @@ const sendEmail = (e: React.FormEvent) => {
             </Button>
             <div className=" flex justify-center">
           <a
-            href="/brochure.pdf"
+            href="/filey.pdf"
             download
             className="inline-block bg-deep-navy text-white hover:bg-powder-blue hover:text-deep-navy/90 px-9 py-2 text-lg rounded-md transition-all duration-300"
           >
