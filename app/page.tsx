@@ -343,6 +343,44 @@ const sendEmail = (e: React.FormEvent) => {
         </div>
       </section>
 
+
+
+ {/* CEO & Founder Section */}
+<section className="py-24 bg-white border-t border-gray-200" id="ceo">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-900">Founder & Visionary</h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+        Driving innovation at the intersection of technology and modern living.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      {/* Founder Image */}
+      <div className="w-full">
+        <img
+          src="/alltree.jpg"
+          alt="Alltrey Pinto - Founder & CEO"
+          className="w-84 h-auto rounded-xl shadow-lg object-cover"
+        />
+      </div>
+
+      {/* Founder Info */}
+      <div>
+        <h3 className="text-3xl font-semibold text-gray-900">Alltrey Pinto</h3>
+        <p className="text-lg text-sky-700 mb-4 font-medium">Founder & Chief Executive Officer</p>
+        <hr className="border-gray-300 mb-6" />
+        <p className="text-gray-700 text-base leading-relaxed">
+          With a relentless passion for building intelligent, sustainable solutions, Alltrey founded Hardwired Solutions
+          to bridge the gap between emerging technology and everyday life. His leadership is defined by innovation,
+          integrity, and a deep commitment to making smarter living accessible to all.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       {/* Footer */}
       <footer className="bg-deep-navy text-white py-12">
         <div className="container mx-auto px-4">
